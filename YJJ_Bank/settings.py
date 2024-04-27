@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'YJJ_Bank.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bankdb',
+        'USER': 'root',
+        'PASSWORD': '.bug1114',
+        'HOST': 'localhost',   # 通常是 'localhost' 或 '127.0.0.1'，亦或是远程数据库地址
+        'PORT': '3306',                 # 默认MySQL端口
     }
 }
 
